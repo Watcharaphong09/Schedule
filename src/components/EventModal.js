@@ -49,9 +49,9 @@ export default function EventModal() {
     setShowEventModal(false);
   }
   return (
-    <div className="h-screen w-full absolute left-0 top-0 flex justify-center items-center">
+    <div className="h-screen w-full absolute left-0 top-0 flex justify-center items-center overflow-hidden z-50">
       <Draggable handle="header">
-      <form className="bg-white rounded-lg shadow-2xl w-1/4">
+      <form className="bg-white rounded-lg shadow-2xl ">
         <header className="bg-gray-100 px-4 py-2 flex justify-between items-center cursor-move">
           <span className="material-icons-outlined text-gray-400">
             drag_handle

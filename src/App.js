@@ -14,7 +14,7 @@ function App() {
   }, [monthIndex]);
 
   return (
-    <React.Fragment>
+    <div className="overflow-hidden">
       {showEventModal && <EventModal />}
 
       <div className="h-screen flex flex-col">
@@ -24,7 +24,7 @@ function App() {
           <Month month={currenMonth} />
         </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 
