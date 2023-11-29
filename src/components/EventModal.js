@@ -50,13 +50,13 @@ export default function EventModal() {
   }
   return (
     <div className="h-screen w-full absolute left-0 top-0 flex justify-center items-center overflow-hidden z-50">
-      <Draggable handle="header">
+      <Draggable handle=".header">
       <form className="bg-white rounded-lg shadow-2xl ">
         <header className="bg-gray-100 px-4 py-2 flex justify-between items-center cursor-move">
-          <span className="material-icons-outlined text-gray-400">
+          <span className="header material-icons-outlined text-gray-400 p-4 left-0 absolute text-4xl">
             drag_handle
           </span>
-          <div>
+          <div className="flex justify-end w-[20rem] gap-5">
             {selectedEvent && (
               <span
                 onClick={() => {
