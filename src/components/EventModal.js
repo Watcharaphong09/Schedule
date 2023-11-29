@@ -53,10 +53,10 @@ export default function EventModal() {
       <Draggable handle=".header">
       <form className="bg-white rounded-lg shadow-2xl ">
         <header className="bg-gray-100 px-4 py-2 flex justify-between items-center cursor-move">
-          <span className="header material-icons-outlined text-gray-400 p-4 left-0 absolute text-4xl">
+          <span className="header material-icons-outlined text-gray-400 p-4 left-0 absolute text-4xl select-none">
             drag_handle
           </span>
-          <div className="flex justify-end w-[20rem] gap-5">
+          <div className="flex justify-end w-[20rem] gap-5 select-none">
             {selectedEvent && (
               <span
                 onClick={() => {
@@ -90,11 +90,11 @@ export default function EventModal() {
               className="pt-3 border-0 text-gray-600 text-xl font-semibold pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-blue-500"
               onChange={(e) => setTitle(e.target.value)}
             />
-            <span className="material-icons-outlined text-gray-400">
+            <span className="material-icons-outlined text-gray-400 select-none">
               schedule
             </span>
             <p>{daySelected.format("dddd, MMMM DD")}</p>
-            <span className="material-icons-outlined text-gray-400">
+            <span className="material-icons-outlined text-gray-400 select-none">
               segment
             </span>
             <input
@@ -106,7 +106,7 @@ export default function EventModal() {
               className="pt-3 border-0 text-gray-600 pb-2 w-full border-b-2 border-gray-200 focus:outline-none focus:ring-0 focus:border-blue-500"
               onChange={(e) => setDescription(e.target.value)}
             />
-            <span className="material-icons-outlined text-gray-400">
+            <span className="material-icons-outlined text-gray-400 select-none">
               bookmark_border
             </span>
             <div className="flex gap-x-2">

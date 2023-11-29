@@ -17,7 +17,7 @@ function App() {
     <div className="overflow-hidden">
       {showEventModal && <EventModal />}
 
-      <div className="h-screen flex flex-col">
+      <div className="h-screen flex flex-col select-none">
         <CalendarHeader />
         <div className="flex flex-1">
           <Sidebar />
